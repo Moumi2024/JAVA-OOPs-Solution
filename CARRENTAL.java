@@ -6,11 +6,12 @@ class CAR {
     int Rent;
 
     public void GetCar() {
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter Car Id : ");
-        CarId = sc.nextInt();
-        System.out.println("Enter Car Type : ");
-        CarType = sc.next();
+        try (Scanner sc = new Scanner(System.in)) {
+            System.out.println("Enter Car Id : ");
+            CarId = sc.nextInt();
+            System.out.println("Enter Car Type : ");
+            CarType = sc.next();
+        }
     }
 
     public int GetRent() {
