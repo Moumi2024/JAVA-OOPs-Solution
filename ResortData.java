@@ -1,4 +1,4 @@
-import java.util.*;
+import java.util.Scanner;
 
 class RESORT {
     int RNo;
@@ -32,7 +32,7 @@ class RESORT {
         System.out.println("Name    : " + Name);
         System.out.println("Charges   : " + Charges);
         System.out.println("Days : " + Days);
-        System.out.println("Total Amount : " + Compute()); 
+        System.out.println("Total Amount : " + Compute());
     }
 }
 
@@ -43,4 +43,3 @@ class ResortData {
         res.DispInfo();
     }
 }
-
